@@ -33,6 +33,9 @@ nav a {
     background-color: #007bff;
     border-radius: 999px;
     color: #ffffff;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 h2 {
@@ -41,4 +44,18 @@ h2 {
 
 th, td {
     padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
 }
